@@ -16,7 +16,14 @@ public class controller {
     }
 
     @GetMapping("/view")
-    public String view(){return "view values";
+    public String view()
+    {
+        return "view values";
+    }
+
+    @GetMapping("/serch")
+    public String serch(){
+        return "serch heare...";
     }
 }
 
