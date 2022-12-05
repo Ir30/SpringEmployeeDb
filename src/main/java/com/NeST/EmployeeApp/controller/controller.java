@@ -25,7 +25,14 @@ public class controller {
     public String serch(){
         return "serch heare...";
     }
+
+    @GetMapping("/delete")
+    public String delete(){
+        return  "delete values here..";
+    }
 }
+
+
 
 
 
