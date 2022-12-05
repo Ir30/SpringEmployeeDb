@@ -14,4 +14,11 @@ public class controller {
     public String add(){
         return "add values";
     }
+
+    @GetMapping("/view")
+    public String view(){return "view values";
+    }
 }
+
+
+
