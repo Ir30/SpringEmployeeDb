@@ -25,6 +25,12 @@ public class controller {
     public String serch(){
         return "serch heare...";
     }
+
+    @GetMapping("/edit")
+    public String edit(){
+        return  "edit here..";
+    }
+
 }
 
 
