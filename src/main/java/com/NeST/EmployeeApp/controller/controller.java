@@ -9,4 +9,9 @@ public class controller {
     public String home(){
         return "welcome to home page of employee db";
     }
+
+    @GetMapping("/add")
+    public String add(){
+        return "add values";
+    }
 }
