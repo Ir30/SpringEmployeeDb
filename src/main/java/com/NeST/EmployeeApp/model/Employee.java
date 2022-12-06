@@ -5,12 +5,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+//adding annotations and specifying the table name
 @Entity
 @Table(name = "employee")
 public class Employee {
 
-    @Id
-    @GeneratedValue
+
+    //declaring the table fields with access modifier and data type
+    @Id//id
+    @GeneratedValue()//auto increment
     private int id;
     private String name;
     private String designstion;
@@ -20,10 +23,11 @@ public class Employee {
     private String username;
     private String password;
 
-
+//creating a non parameterized cunstructor
     public Employee() {
     }
 
+    //create a parameterized constructor with passing all the fields
     public Employee(int id, String name, String designstion, int salary, String cmp_name, String mobile, String username, String password) {
         this.id = id;
         this.name = name;
@@ -35,6 +39,8 @@ public class Employee {
         this.password = password;
     }
 
+
+    //generating getters for all feild
 
     public int getId() {
         return id;
@@ -70,7 +76,7 @@ public class Employee {
 
 
 
-
+//generating setters for all fields
     public void setId(int id) {
         this.id = id;
     }
